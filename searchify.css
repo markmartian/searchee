@@ -1,0 +1,189 @@
+.box{
+    position:relative;
+	display:block;
+    float:left;	
+    height:auto;   
+    width:60%;  
+    padding:0px 20px 20px 20px;
+	border: 1px solid #BEB7B1;
+	background:#FFFFFF;
+	margin-bottom: 20px;
+}
+
+.box .header{
+	position:static;
+	font-family: "Trebuchet MS", Trebuchet, Verdana, Tahoma, sans-serif;
+	font-size:48px;
+ 	color: #0073A3;
+    line-height:1.5em;
+	left:50%;
+	text-align:center;
+}
+
+.tile{
+    position:relative;
+    display:block;
+    float:left;
+    text-align:left;
+	
+    width:45%;  
+	padding:0;
+	margin:0 0.2% 1px 0;
+	
+	font-family: "Trebuchet MS", Trebuchet, Verdana, Tahoma, sans-serif;
+	font-size:16pt;
+	font-weight: bold;
+	color: #E2DEDB;
+	line-height:0.6em;
+}
+
+.tile.left {
+	float:left;
+	max-width:450px;
+}
+
+.tile.right {
+	float:right;
+	max-width:450px;
+}
+
+.row .tile{
+    height:100px;
+}
+
+.rowSpacer {
+    height:50px;
+	clear:both;
+}
+		
+/*Floats left and text-aligns left*/
+.Title{
+    margin:10px;
+    display:block;
+    float:left;
+	word-wrap:break-word;
+	color: #E2DEDB !important;
+    line-height:1em;
+}
+
+/*Center aligns and forces Subtitle on new line*/
+.Title.centered{
+    text-align:center;
+    float:none;
+}
+
+/*Left aligns but without the float, so it forces Subtitle on new line*/
+.Title.left{
+    text-align:left;
+    float:none;
+}
+
+.Subtitle{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin: 5px;
+	font-size:0.60em;
+    line-height:1.3em;
+	font-weight:normal;
+}
+
+/*Promotes subtitle to relative block element, letting it rise to the top. Should be used for autoHeight tiles*/
+.Subtitle.top{
+    position:relative;
+    display:block;
+    margin-bottom:2.3em;
+    top:10px;
+}
+
+.Subtitle.top.centered{
+    text-align:center;
+}
+
+.Subtitle a:link{
+	text-decoration:underline;
+	color:#E2DEDB;
+}
+.Subtitle a:visited{
+	text-decoration:underline;
+	color:#E2DEDB;
+}
+.Subtitle a:hover{
+	text-decoration:underline;
+	color:#A5E6DB;
+}
+
+.child{
+    width:100%;
+    right:0px;
+    bottom:0px;
+    position:absolute;
+}
+
+/*tile sproutStyle*/
+.child.sproutStyle .tile{
+    border:none;
+    bottom:-1px;
+    width:45%;
+    height:42px;
+    float:right;
+    white-space:nowrap;
+	margin: 0 0 1px 2.5%;
+}
+
+.imageBox{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+    text-align:center;
+
+}
+
+.imageBox img{
+	border: 0px none;
+	position:static;
+    float:none;
+    margin: 0px auto 0px auto;
+}
+
+.inputBox {
+	position:relative;
+	margin:0px;
+    display:block;
+    float:left;
+    text-align:left;
+    border: 2px solid #0073A3;
+	font-family: "Trebuchet MS", Trebuchet, Verdana, Tahoma, sans-serif;
+	font-size:16pt;
+	font-weight: bold;
+	color: #0073A3;
+    padding: 10px;
+    background: #FFFFFF;
+}
+
+img.searchButton:hover{
+	opacity:80;
+	filter:alpha(opacity=80); /* For IE */
+}
+
+/*Tile colors and their corresponding hover color*/
+.pathBlue{background:#0073A3;}
+a .pathBlue:hover{background: #007CB0;}
+.hiddenText.pathBlue{color:#0073A3;}
+
+.pathLightBlue{background:#649AB2;}
+.hiddenText.pathLightBlue{color:#649AB2;}
+
+.pathLightPurple{background:#78496A}
+a .pathLightPurple:hover{background-color: #855175;}
+.hiddenText.pathLightPurple{color:#78496A;}
+
+.imageBox img:hover{
+	opacity:0;
+	filter:alpha(opacity=0); /* For IE */
+}
+
+.tile.hiddenText:hover {
+	color:#E2DEDB;
+}
